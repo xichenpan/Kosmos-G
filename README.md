@@ -125,6 +125,12 @@ If you find this repository useful, please consider citing our work:
 }
 ```
 
+## Disclaimer
+
+Kosmos-G is purely a research project. Currently, we have no plans to incorporate Kosmos-G into a product or expand access to the public. We will also put Microsoft AI principles into practice when further developing the models.
+
+In our research paper, we account for the ethical concerns associated with text-to-image research. To mitigate issues associated with training data, we have implemented a rigorous filtering process to purge our training data of inappropriate content, such as explicit imagery and offensive language, to minimize the likelihood of generating inappropriate content.
+
 ## Acknowledgement
 
 This repository is built using [torchscale](https://github.com/microsoft/torchscale), [fairseq](https://github.com/facebookresearch/fairseq), [openclip](https://github.com/mlfoundations/open_clip). We thank the authors of [Nerfies](https://github.com/nerfies/nerfies.github.io) that kindly open sourced the template of the project page.
