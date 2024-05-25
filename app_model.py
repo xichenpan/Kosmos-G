@@ -486,7 +486,7 @@ class AppModel:
         }
 
         image = self.model.sample_controlnet(src_tokens, gpt_img_src_tokens, img_gpt_input_mask, negative_tokens,
-                                             control_image, self.controlnet, kwargs)
+                                             control_image, self.controlnet, **kwargs)
         return [control_image] + image
 
     @torch.inference_mode()
@@ -509,5 +509,5 @@ class AppModel:
         }
 
         image = self.model.sample_controlnet(src_tokens, gpt_img_src_tokens, img_gpt_input_mask, negative_tokens,
-                                             control_image, self.controlnet, kwargs)
+                                             control_image, self.controlnet, **kwargs)
         return [control_image] + image
